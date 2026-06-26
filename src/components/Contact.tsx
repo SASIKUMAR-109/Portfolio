@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Linkedin, Github, TwitterIcon, Youtube } from 'lucide-react';
+import { Linkedin, Github } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -52,36 +52,19 @@ const Contact: React.FC = () => {
                 <Github className="text-primary" size={24} />
                 <span>GitHub</span>
               </a>
-              
-              <a 
-                href="https://x.com/srinu18yt" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"
-              >
-                <TwitterIcon className="text-primary" size={24} />
-                <span>Twitter</span>
-              </a>
 
-              <a 
-                href="https://www.youtube.com/@Srinubytes" 
-                className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"
-              >
-                <Youtube className="text-primary" size={24} />
-                <span>Srinu Bytes</span>
-              </a>
-            </div>
-            
-            <div className="mt-10 text-center">
-              <p className="text-text/70 mb-4">Prefer a more direct approach?</p>
-              <a href="mailto:srinu18yt@gmail.com" className="primary-btn inline-block">
-                Send an Email
-              </a>
-            </div>
-          </motion.div>
         </div>
-      </div>
-    </section>
+        
+        <div className="mt-10 text-center">
+          <p className="text-text/70 mb-4">Prefer a more direct approach?</p>
+          <a href="mailto:sasikumar.tadela@gmail.com" className="primary-btn inline-block">
+            Send an Email
+          </a>
+        </div>
+      </motion.div>
+    </div>
+  </div>
+</section>
   );
 };
 

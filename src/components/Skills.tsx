@@ -41,7 +41,7 @@ const Skills: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My <span className="text-primary">Skills</span></h2>
           <div className="w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
           <p className="text-text/80 max-w-2xl mx-auto">
-            A curated showcase of my technical expertise and entrepreneurial achievements, honed through years of innovation and leadership.
+            A curated showcase of my technical skills and certifications, built through hands on projects, hackathons and continuous learning.
           </p>
         </motion.div>
 

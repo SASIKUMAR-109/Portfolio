@@ -204,7 +204,7 @@ export const defaultContact: ContactInfo = {
 
 export const defaultCollaboration: CollaborationData = {
     title: "Let's Build Together",
-    description: "I'm actively looking for opportunities to collaborate on Unity game projects and immersive experiences! Whether it's gameplay programming, physics systems, or VR development — I'm eager to learn and contribute to production-level projects.",
+    description: "I am actively looking for opportunities to collaborate on full stack web projects and real world applications. Whether it is frontend development, backend APIs, or end to end MERN stack projects, I am eager to learn, contribute and grow through production level work.",
     buttonText: "Get in Touch",
     buttonLink: "#contact",
     icon: "Users",
