@@ -1,8 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Linkedin, Github } from 'lucide-react';
+import { usePortfolioData } from '../hooks/usePortfolioData';
 
 const Contact: React.FC = () => {
+  const { data } = usePortfolioData();
+  const { contact } = data;
+
   return (
     <section id="contact" className="py-20">
       <div className="container mx-auto px-4">
@@ -34,7 +38,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               <a 
-                href="https://linkedin.com/in/srinivasu-kadiyam" 
+                href={contact.linkedin || "https://linkedin.com/in/srinivasu-kadiyam"} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"
@@ -44,7 +48,7 @@ const Contact: React.FC = () => {
               </a>
               
               <a 
-                href="https://github.com/CodeSrinu" 
+                href={contact.github || "https://github.com/CodeSrinu"} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"
@@ -57,7 +61,7 @@ const Contact: React.FC = () => {
         
         <div className="mt-10 text-center">
           <p className="text-text/70 mb-4">Prefer a more direct approach?</p>
-          <a href="mailto:sasikumar.tadela@gmail.com" className="primary-btn inline-block">
+          <a href={`mailto:${contact.email || "sasikumar.tadela@gmail.com"}`} className="primary-btn inline-block">
             Send an Email
           </a>
         </div>

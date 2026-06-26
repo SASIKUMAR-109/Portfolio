@@ -27,6 +27,7 @@ export function usePortfolioData() {
                         ...firebaseData,
                         // Ensure nested objects are properly merged
                         profile: { ...defaultPortfolioData.profile, ...firebaseData.profile },
+                        contact: { ...defaultPortfolioData.contact, ...firebaseData.contact },
                         collaboration: firebaseData.collaboration || defaultPortfolioData.collaboration,
                         customSections: firebaseData.customSections || defaultPortfolioData.customSections || []
                     });
