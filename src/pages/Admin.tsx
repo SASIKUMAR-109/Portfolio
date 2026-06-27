@@ -278,20 +278,7 @@ const Admin: React.FC = () => {
                 {/* Content */}
                 <div className="p-4 md:p-6 max-w-4xl">
                     {activeSection === 'profile' && (
-                        <>
-                            <ProfileEditor profile={profile} setProfile={setProfile} />
-                            <div className="mt-8 p-4 bg-blue-500/10 border border-blue-500/30 rounded-lg">
-                                <p className="text-blue-400 text-sm mb-2">
-                                    <strong>First time setup?</strong> Click below to copy your current portfolio content to Firebase.
-                                </p>
-                                <button
-                                    onClick={handleInitialize}
-                                    className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-400 transition-colors text-sm"
-                                >
-                                    Initialize Portfolio Data
-                                </button>
-                            </div>
-                        </>
+                        <ProfileEditor profile={profile} setProfile={setProfile} />
                     )}
                     {activeSection === 'about' && (
                         <AboutEditor about={about} setAbout={setAbout} />
