@@ -10,185 +10,113 @@ export const defaultProfile: ProfileData = {
 };
 
 export const defaultAbout: AboutData = {
-    bio: "I can’t stay satisfied with surface-level understanding and always push to know why things work. I learn by experimenting, breaking systems, and fixing them rather than copying solutions. Currently focused on Unity gameplay development, with a long-term goal of building real products and growing into a technical entrepreneur.",
+    bio: "I am a passionate Full Stack Developer and a final year B.Tech IT student. I love solving complex problems, building modern web applications, and experimenting with new technologies. My goal is to build scalable, high-performance web products that deliver great user experiences.",
     image: "/b.png"
 };
 
 export const defaultSkills: SkillCategory[] = [
     {
-        id: "unity-development",
-        name: "Unity & Gameplay",
-        icon: "Gamepad2",
+        id: "frontend",
+        name: "Frontend Development",
+        icon: "Layout",
         skills: [
-            { name: "Unity Editor", level: 85 },
-            { name: "C# Scripting", level: 80 },
-            { name: "Player Controllers", level: 75 },
-            { name: "Physics & Rigidbody", level: 70 },
-            { name: "Animator & Blend Trees", level: 70 },
-            { name: "UI Systems", level: 75 }
+            { name: "React.js", level: 85 },
+            { name: "TypeScript", level: 80 },
+            { name: "JavaScript (ES6+)", level: 85 },
+            { name: "HTML5 & CSS3", level: 90 },
+            { name: "Tailwind CSS", level: 85 }
+        ]
+    },
+    {
+        id: "backend",
+        name: "Backend Development",
+        icon: "Database",
+        skills: [
+            { name: "Node.js", level: 80 },
+            { name: "Express.js", level: 80 },
+            { name: "Firebase (Firestore/Auth)", level: 80 },
+            { name: "MongoDB / SQL", level: 75 }
         ]
     },
     {
         id: "programming",
-        name: "Programming",
+        name: "Programming Languages",
         icon: "Code",
         skills: [
-            { name: "C#", level: 80 },
-            { name: "C", level: 75 },
-            { name: "Python", level: 70 },
-            { name: "OOP Concepts", level: 75 }
+            { name: "JavaScript", level: 85 },
+            { name: "TypeScript", level: 80 },
+            { name: "Python", level: 75 },
+            { name: "Java", level: 70 }
         ]
     },
     {
         id: "tools",
-        name: "Tools & Workflow",
+        name: "Tools & Workflows",
         icon: "Wrench",
         skills: [
-            { name: "Git & Version Control", level: 80 },
-            { name: "VS Code / Visual Studio", level: 85 },
-            { name: "Mixamo", level: 70 },
-            { name: "Figma", level: 60 }
-        ]
-    },
-    {
-        id: "experimental",
-        name: "Learning & Experimental",
-        icon: "Lightbulb",
-        skills: [
-            { name: "Unity XR Toolkit", level: 50 },
-            { name: "VR Fundamentals", level: 55 },
-            { name: "Gameplay Prototyping", level: 70 }
+            { name: "Git & GitHub", level: 85 },
+            { name: "VS Code", level: 90 },
+            { name: "Postman", level: 80 },
+            { name: "Vercel / Netlify", level: 80 }
         ]
     }
 ];
 
-// ORIGINAL TIMELINE - kept all existing items, added Unity training
 export const defaultTimeline: TimelineItem[] = [
     {
         id: "school",
         date: "2020",
-        title: "10th Grade - Infant Jesus School",
-        shortDescription: "Secured 10/10 GPA in SSC (Corona Batch).",
-        fullDescription: "Completed 10th grade at Infant Jesus English Medium High School with a perfect 10/10 GPA, adapting to online learning challenges during the pandemic.",
+        title: "Secondary School Certificate",
+        shortDescription: "Completed 10th grade with excellent GPA.",
+        fullDescription: "Completed secondary education with focus on foundational science and mathematics.",
         icon: "School"
     },
     {
         id: "intermediate",
         date: "2022",
-        title: "12th Grade - Narayana Junior College",
-        shortDescription: "Scored 82% in Intermediate, EPCET Rank - 111072.",
-        fullDescription: "Completed Intermediate at Narayana Junior College, focusing on science and engineering subjects, securing 82% and an EPCET Rank of 111072.",
+        title: "Intermediate Education",
+        shortDescription: "Completed 12th grade in MPC stream.",
+        fullDescription: "Finished pre-university college course majoring in Mathematics, Physics, and Chemistry.",
         icon: "BookOpen"
     },
     {
         id: "engineering",
-        date: "2023-Present",
-        title: "Engineering - SITE",
-        shortDescription: "Currently pursuing Engineering at Sasi Institute.",
-        fullDescription: "Enrolled in the Engineering program at Sasi Institute of Technology and Engineering, gaining hands-on experience in research and real-world projects.",
+        date: "2022-Present",
+        title: "B.Tech in Information Technology - SITE",
+        shortDescription: "Currently pursuing B.Tech in IT at Sasi Institute of Technology and Engineering.",
+        fullDescription: "Pursuing Bachelor of Technology in Information Technology at SITE, specializing in software engineering, database management systems, and web application development.",
         icon: "GraduationCap"
-    },
-    {
-        id: "vr-project",
-        date: "2024",
-        title: "VR Educational Platform",
-        shortDescription: "Developing a VR-based education project.",
-        fullDescription: "Taking forward an SIH project as a personal initiative to create a VR-based educational platform, making learning more immersive.",
-        icon: "Glasses"
-    },
-    {
-        id: "sih",
-        date: "2024",
-        title: "Smart India Hackathon",
-        shortDescription: "Participated in SIH, cleared two rounds.",
-        fullDescription: "Competed in Smart India Hackathon (SIH), successfully clearing two rounds while working on an innovative solution.",
-        icon: "Award"
-    },
-    {
-        id: "weather-research",
-        date: "2025",
-        title: "Weather Satellite Research",
-        shortDescription: "Processing image data for satellite research.",
-        fullDescription: "Working as a researcher in the R&D department of ECT, focusing on processing satellite image data for weather prediction systems.",
-        icon: "Satellite"
-    },
-    {
-        id: "youtube",
-        date: "2025",
-        title: "YouTube - Sasi Bytes",
-        shortDescription: "Started Sasi Bytes for tech & web content.",
-        fullDescription: "Launched Sasi Bytes YouTube channel to share insights on web development, tech innovations, and startup experiences.",
-        icon: "Youtube"
-    },
-    {
-        id: "unity-training",
-        date: "2025",
-        title: "Unity Development Training",
-        shortDescription: "Training under professional Unity developer mentor.",
-        fullDescription: "Currently undergoing professional training in Unity game development, learning production-level practices and building real gameplay systems.",
-        icon: "Gamepad2"
     }
 ];
 
-// ORIGINAL PROJECTS - kept Weather Prediction, added Unity projects
 export const defaultProjects: Project[] = [
     {
-        id: "gameplay-systems",
-        title: "Multi-Level Unity Game",
-        tagline: "Core Gameplay Systems & Progression",
-        description: "Built a complete multi-level Unity game focused on gameplay mechanics, progression, and UI interaction. Implemented player movement, gravity-based jumping, collision handling, and score tracking entirely using C#. Designed three playable levels with increasing difficulty and objective-based progression. Developed full in-game UI systems including menus, settings, score display, game over, and completion screens.",
-        icon: "Gamepad2",
-        technologies: ["Unity", "C#", "Animator", "UI Toolkit"],
+        id: "fullstack-ecom",
+        title: "E-Commerce Web Application",
+        tagline: "MERN Stack E-Commerce Platform",
+        description: "Built a fully functional e-commerce web application featuring user authentication, product catalog, search filters, shopping cart, and checkout system. Integrated payment gateway and admin dashboard for inventory management.",
+        icon: "ShoppingCart",
+        technologies: ["React", "Node.js", "Express", "MongoDB", "Tailwind CSS"],
         githubUrl: "",
         demoUrl: ""
     },
     {
-        id: "player-controller",
-        title: "Advanced Player Controller",
-        tagline: "Reusable Movement Systems",
-        description: "Built reusable player controller systems using both Rigidbody-based and CharacterController-based approaches. Implemented movement, jumping, sliding, and camera-follow behavior. Integrated character animations using Animator Controller and Blend Trees. Connected gameplay states with animation transitions and sound effects.",
+        id: "portfolio-website",
+        title: "Personal Portfolio",
+        tagline: "Dynamic Developer Portfolio",
+        description: "Designed and developed this personal portfolio website to showcase my skills, projects, and experiences. Integrated a custom admin panel using React, Tailwind CSS, and Firebase Firestore for dynamic content management.",
         icon: "User",
-        technologies: ["Unity", "C#", "CharacterController", "Rigidbody", "Mixamo"],
+        technologies: ["React", "TypeScript", "Firebase", "Framer Motion", "Tailwind CSS"],
         githubUrl: "",
         demoUrl: ""
     },
     {
-        id: "physics-games",
-        title: "Physics-Based Mini Games",
-        tagline: "Obstacle Courses & Bowling",
-        description: "Developed obstacle course games with collision-based win and fail conditions. Built a bowling game using Rigidbody physics and realistic interactions. Created track-based ball games with moving platforms, ramps, and button-triggered mechanics. All projects focused on understanding Unity physics system deeply.",
-        icon: "Target",
-        technologies: ["Unity", "C#", "Physics", "Rigidbody", "Colliders"],
-        githubUrl: "",
-        demoUrl: ""
-    },
-    {
-        id: "vr-education",
-        title: "VR Educational Project",
-        tagline: "Immersive Learning Experience",
-        description: "I have consistently worked on VR-based educational projects, focusing on making learning immersive and interactive. My goal has been to leverage VR technology to simplify complex concepts, especially in STEM education. From developing 3D models and simulations to integrating backend communication for VR labs, I have explored various ways to make education more engaging and accessible.",
-        icon: "Globe",
-        technologies: ["Unity", "XR Toolkit", "Vuforia", "C#"],
-        githubUrl: "",
-        demoUrl: ""
-    },
-    {
-        id: "weather-prediction",
-        title: "Weather Prediction System",
-        tagline: "AI-Powered Forecasting",
-        description: "I worked on a Weather Prediction System that used satellite images, radar data, and AI analysis to provide accurate, real-time weather forecasts. The system was designed to predict rainfall with precise timing, benefiting agriculture and institutional weather reporting. I used Python, OpenWeather API, and data from MOSDAC and MAUSAM IMD to process satellite imagery and radar inputs.",
-        icon: "Cloud",
-        technologies: ["Python", "OpenWeather API", "MOSDAC", "MAUSAM IMD"],
-        githubUrl: "",
-        demoUrl: ""
-    },
-    {
-        id: "xr-experiments",
-        title: "XR & VR Experiments",
-        tagline: "Learning VR Fundamentals",
-        description: "Set up and tested basic VR scenes using Unity XR Device Simulator. Experimented with VR interactions and controller input handling. Actively troubleshooting XR controller input issues to strengthen XR fundamentals and learn immersive development.",
-        icon: "Glasses",
-        technologies: ["Unity", "XR Toolkit", "VR", "C#"],
+        id: "task-manager",
+        title: "Task Management App",
+        tagline: "Productivity & Collaboration Tool",
+        description: "Developed a real-time task management application with drag-and-drop boards, task assignment, status tracking, and deadline notifications.",
+        icon: "CheckSquare",
+        technologies: ["React", "Node.js", "Express", "Firebase", "Tailwind CSS"],
         githubUrl: "",
         demoUrl: ""
     }
