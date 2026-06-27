@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               
               <a 
-                href={contact.linkedin || "https://linkedin.com/in/srinivasu-kadiyam"} 
+                href={contact.linkedin || "https://linkedin.com/in/sasi-kumar-tadela"} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"
@@ -48,7 +48,7 @@ const Contact: React.FC = () => {
               </a>
               
               <a 
-                href={contact.github || "https://github.com/CodeSrinu"} 
+                href={contact.github || "https://github.com/SASIKUMAR-109"} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="flex items-center justify-center gap-3 p-4 border border-gray-800 rounded-lg hover:border-primary transition-all duration-300"

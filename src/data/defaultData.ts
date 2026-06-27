@@ -1,11 +1,11 @@
 import { ProfileData, AboutData, SkillCategory, TimelineItem, Project, ContactInfo, CollaborationData, PortfolioData } from '../types';
 
 export const defaultProfile: ProfileData = {
-    name: "Srinivasu Kadiyam",
-    nickname: "Srinu",
-    roles: ["Unity Gameplay Programmer", "Aspiring Entrepreneur", "Problem Solver"],
+    name: "Tadela Sasi Kumar",
+    nickname: "Sasi",
+    roles: ["Full Stack Developer", "Problem Solver", "Tech Enthusiast"],
     quote: "Learn by building, breaking, and debugging",
-    profileImage: "https://i.postimg.cc/kgGdy3bD/Srinu.png",
+    profileImage: "/b.png",
     resumeUrl: ""
 };
 
@@ -115,9 +115,9 @@ export const defaultTimeline: TimelineItem[] = [
     {
         id: "youtube",
         date: "2025",
-        title: "YouTube - Srinu Bytes",
-        shortDescription: "Started Srinu Bytes for tech & VR content.",
-        fullDescription: "Launched Srinu Bytes YouTube channel to share insights on VR development, tech innovations, and startup experiences.",
+        title: "YouTube - Sasi Bytes",
+        shortDescription: "Started Sasi Bytes for tech & web content.",
+        fullDescription: "Launched Sasi Bytes YouTube channel to share insights on web development, tech innovations, and startup experiences.",
         icon: "Youtube"
     },
     {
@@ -195,9 +195,9 @@ export const defaultProjects: Project[] = [
 ];
 
 export const defaultContact: ContactInfo = {
-    email: "srinu18yt@gmail.com",
-    github: "https://github.com/CodeSrinu",
-    linkedin: "",
+    email: "sasikumar.tadela@gmail.com",
+    github: "https://github.com/SASIKUMAR-109",
+    linkedin: "https://linkedin.com/in/sasi-kumar-tadela",
     youtube: "",
     twitter: ""
 };
